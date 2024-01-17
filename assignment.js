@@ -216,6 +216,5 @@ db.customers.aggregate([{$lookup:{from:'orders',localField:'_id',foreignField:'c
   { customername: 'John Doe', numberOfOrders: 2 }
  ]
 
-
  // 27 - Retrieve the customer names along with the average order value, sorted by the average order value in descending order
  
