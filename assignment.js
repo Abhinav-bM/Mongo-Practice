@@ -38,7 +38,7 @@ db.orders.aggregate([{$group:{_id:null,TotalOrders:{$sum:1}}}]).forEach((data)=>
 = 4
 
 db.orders.aggregate([{$group:{_id:null,TotalOrders:{$sum:1}}}]).forEach((data)=>print("totalOrders : " + data.TotalOrders))
-= totalOrders : 4
+= totalOrders = 4
 
 // 3 - Retrieve the details of the order with OrderID 1003.
 db.orders.find({_id:1003})
